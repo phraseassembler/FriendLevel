@@ -1,0 +1,31 @@
+    <div class="wrapper wrapper_padding clearfix">
+            <div class="col-1 about homepage_content">
+                <h2>About</h2> 
+                <hr>
+                <p>I'm an IT person, a developer &amp; a Juicer living in Accra,Ghana</p>
+                <p>By day I work as an IT Support Person at a Local bank / by night I work as a developer at <a href="#"> 
+                    Webtopia Enterprise</a></p>
+                <p>Inbetween the two i produce freshly sqeezed OJ without any additives</p>
+                   
+                    
+                  
+             </div>
+            <div class="col-2 homepage_content">
+                <h2>Stuff I've Written</h2>
+                <hr>
+                
+                <% @posts.each do |post| %>
+                <h3><a href="#"><%= link_to post.title, post %></a></h3>
+                <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+                <% end %>
+                
+            </div>
+            <div class="col-3 homepage_content">
+                <h2>Stuff I've Built</h2>
+                <hr>
+                <% @projects.each do |project| %>
+                <h3><a href="#"><%= link_to project.title, project %></a></h3>
+                <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
+                <% end %>
+            </div>        
+        </div>
