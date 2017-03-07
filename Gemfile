@@ -1,6 +1,5 @@
 source 'http://rubygems.org'
 
-ruby '2.3.3'
 
 
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
@@ -16,6 +15,8 @@ gem 'redcarpet','~>3.2.2'
 gem 'friendly_id', '~> 5.1'
 gem 'will_paginate', '~> 3.1', '>= 3.1.5'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
+gem 'devise', '~> 4.2'
+gem 'bcrypt', '~> 3.1', '>= 3.1.11'
 
 group :development, :test do
   gem 'byebug', platform: :mri
